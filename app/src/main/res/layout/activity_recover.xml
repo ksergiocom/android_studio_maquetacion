@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="¿Has olvidado tu contraseña?"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView2"
+        android:layout_marginTop="20dp"
+        android:text="Si has olvidado tu contraseña, proporciónanos tu correo y te enviarán las instrucciones para recuperarla."
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:textSize="16sp"
+        android:textColor="#000000" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView3"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:hint="Dirección de email"
+        android:inputType="textEmailAddress" />
+
+    <Button
+        android:id="@+id/recover_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextTextEmailAddress"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:text="Enviar"
+        android:textColor="#1147E4" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recover_btn"
+        android:layout_marginTop="40dp"
+        android:text="¿Volver a"
+        android:layout_alignParentLeft="true"
+        android:textSize="14sp"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/recovery_link_inicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/textView6"
+        android:layout_marginStart="80dp"
+        android:text="Iniciar sesión"
+        android:textColor="#102497"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Copyright © 2025 - Memes S.A."
+        android:textSize="12sp"
+        android:textColor="#000000" />
+
+</android.widget.RelativeLayout>
