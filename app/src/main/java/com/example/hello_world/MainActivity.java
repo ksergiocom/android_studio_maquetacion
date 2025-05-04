@@ -37,6 +37,9 @@ public class MainActivity extends AppCompatActivity {
             if (id == R.id.nav_inicio) {
                 setCurrentFragment(inicioFragment);
                 return true;
+            } else if( id == R.id.nav_rutas){
+                setCurrentFragment(rutasFragment);
+                return true;
             }
             return false;
         });
