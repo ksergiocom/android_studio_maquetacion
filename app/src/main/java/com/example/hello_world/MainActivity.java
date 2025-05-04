@@ -1,5 +1,6 @@
 package com.example.hello_world;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -36,9 +37,6 @@ public class MainActivity extends AppCompatActivity {
             if (id == R.id.nav_inicio) {
                 setCurrentFragment(inicioFragment);
                 return true;
-            } else if (id == R.id.nav_rutas) {
-                setCurrentFragment(rutasFragment);
-                return true;
             }
             return false;
         });
@@ -54,8 +52,11 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         Fragment configuracionFragment = new Configuracion();
 
-        if (item.getItemId() == R.id.nav_other) {
+        if (item.getItemId() == R.id.nav_configuracion) {
             setCurrentFragment(configuracionFragment);
+            return true;
+        } else if (item.getItemId() == R.id.nav_logout) {
+            startActivity(new Intent(MainActivity.this, LoginActivity.class));
             return true;
         }
         return super.onOptionsItemSelected(item);

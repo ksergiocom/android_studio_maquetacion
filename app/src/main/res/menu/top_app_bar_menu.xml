@@ -1,9 +1,18 @@
-<?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Opción para Configuración -->
     <item
-        android:id="@+id/nav_other"
+        android:id="@+id/nav_configuracion"
         android:icon="@drawable/baseline_account_circle_24"
-        android:title="Otro"
-        app:showAsAction="always" />
+    android:title="Configuración"
+    app:showAsAction="never" />
+
+    <!-- Opción para Logout -->
+    <item
+        android:id="@+id/nav_logout"
+        android:icon="@drawable/baseline_close_24"
+    android:title="Cerrar sesión"
+    app:showAsAction="never" />
+
 </menu>
