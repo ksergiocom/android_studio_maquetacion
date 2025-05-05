@@ -11,31 +11,31 @@ import android.widget.Button;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link Rutas#newInstance} factory method to
+ * Use the {@link Agenda#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class Rutas extends Fragment {
-
+public class Agenda extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View view = inflater.inflate(R.layout.fragment_rutas, container, false);
+        View view = inflater.inflate(R.layout.fragment_agenda, container, false);
 
-        Button btnCrearItinerario = view.findViewById(R.id.btnCrearItinerario);
+        Button btnAgregar = view.findViewById(R.id.button9);
 
-        btnCrearItinerario.setOnClickListener(v -> {
-            // Aquí podrías guardar datos si hiciera falta
+        btnAgregar.setOnClickListener(v -> {
+            // Aquí podrías guardar los datos antes de volver, si hace falta
 
             // Volver al fragmento Agenda
             requireActivity().getSupportFragmentManager()
                     .beginTransaction()
-                    .replace(R.id.flFragment, new RutasForm())  // R.id.flFragment es el contenedor principal
+                    .replace(R.id.flFragment, new AgendaForm())  // Asegúrate que R.id.flFragment es tu contenedor de fragmentos
                     .addToBackStack(null)
                     .commit();
         });
 
         return view;
     }
+
 }

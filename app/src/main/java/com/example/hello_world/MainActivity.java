@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
         Fragment inicioFragment = new Inicio();
         Fragment rutasFragment = new Rutas();
+        Fragment agendaFragment = new Agenda();
 
         setCurrentFragment(inicioFragment);
 
@@ -39,6 +40,9 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             } else if( id == R.id.nav_rutas){
                 setCurrentFragment(rutasFragment);
+                return true;
+            } else if( id == R.id.nav_agenda){
+                setCurrentFragment(agendaFragment);
                 return true;
             }
             return false;

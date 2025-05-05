@@ -27,13 +27,44 @@ public class Inicio extends Fragment {
                              @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_inicio, container, false);
 
+        Fragment detalleFragment = new Detalle();
+
         LinearLayout cardContainer = view.findViewById(R.id.cardContainer);
 
         List<CardInfo> listaCards = Arrays.asList(
-                new CardInfo("Viaje a la Playa", "Sol y arena", R.drawable.playa),
-                new CardInfo("Montañas", "Aventura y aire fresco", R.drawable.montana),
-                new CardInfo("Ciudad", "Explora la cultura urbana", R.drawable.ciudad)
+                new CardInfo(
+                        "Viaje a la Playa",
+                        "Disfruta de días soleados en la costa, relajándote sobre la arena fina mientras escuchas el sonido de las olas. Ideal para desconectar del estrés y sumergirse en un entorno tropical con aguas cristalinas.",
+                        R.drawable.playa
+                ),
+                new CardInfo(
+                        "Montañas",
+                        "Sumérgete en una experiencia única de senderismo, aire puro y paisajes imponentes. Perfecto para los amantes de la naturaleza que buscan aventuras en entornos tranquilos rodeados de pinos y cumbres nevadas.",
+                        R.drawable.montana
+                ),
+                new CardInfo(
+                        "Ciudad",
+                        "Explora el vibrante ritmo urbano con sus museos, gastronomía internacional, arquitectura moderna y vida nocturna. Una escapada ideal para quienes desean descubrir nuevas culturas sin salir del entorno metropolitano.",
+                        R.drawable.ciudad
+                ),
+                new CardInfo(
+                        "Escapada Costera",
+                        "Vive una experiencia inolvidable frente al mar con atardeceres espectaculares, deportes acuáticos y paseos por la orilla. Un destino perfecto para el romance o el descanso absoluto.",
+                        R.drawable.playa
+                ),
+                new CardInfo(
+                        "Refugio en la Cima",
+                        "Descubre la paz de los paisajes montañosos y déjate llevar por rutas naturales, lagos escondidos y el contacto puro con la tierra. Ideal para desconectar y reconectar contigo mismo.",
+                        R.drawable.montana
+                ),
+                new CardInfo(
+                        "Aventura Urbana",
+                        "Sumérgete en el dinamismo de una gran ciudad donde cada rincón cuenta una historia. Entre luces, cultura y ritmo acelerado, cada día es una nueva oportunidad para explorar lo inesperado.",
+                        R.drawable.ciudad
+                )
         );
+
+
 
         for (CardInfo card : listaCards) {
             View cardView = inflater.inflate(R.layout.item_card, container, false);
@@ -48,7 +79,14 @@ public class Inicio extends Fragment {
             descView.setText(card.descripcion);
 
             button.setOnClickListener(v -> {
-                Toast.makeText(getContext(), "Has pulsado: " + card.titulo, Toast.LENGTH_SHORT).show();
+
+
+                // Cambiar a Detalle fragment
+                requireActivity().getSupportFragmentManager()
+                        .beginTransaction()
+                        .replace(R.id.flFragment, new Detalle())
+                        .addToBackStack(null)
+                        .commit();
             });
 
             cardContainer.addView(cardView);

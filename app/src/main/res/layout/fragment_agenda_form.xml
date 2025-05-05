@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nuevo Recordatorio"
+        android:textSize="34sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <!-- Campo: Descripción -->
+    <EditText
+        android:id="@+id/editTextDescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_marginTop="32dp"
+        android:hint="Descripción (opcional)"
+        android:textSize="20sp"
+        android:inputType="text" />
+
+    <!-- Contenedor horizontal para fechas -->
+    <LinearLayout
+        android:id="@+id/linearLayoutFechas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextDescripcion"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <!-- Fecha inicio -->
+        <EditText
+            android:id="@+id/editTextFechaInicio"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Fecha inicio"
+            android:inputType="date"
+            android:focusable="false"
+            android:padding="8dp" />
+
+        <!-- Fecha final -->
+        <EditText
+            android:id="@+id/editTextFechaFinal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Fecha final"
+            android:inputType="date"
+            android:focusable="false"
+            android:padding="8dp"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+    <!-- Campo: Detalles -->
+    <EditText
+        android:id="@+id/editTextDetalles"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/linearLayoutFechas"
+        android:layout_marginTop="24dp"
+        android:hint="Vuelo a México, visita Ciudad de México, Teotihuacán y prueba tacos auténticos. Llega a Perú, descubre Lima y maravíllate con Machu Picchu. En Buenos Aires, Argentina, pasea por La Boca y disfruta un asado"
+        android:textSize="18sp"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:lines="6"
+        android:maxLines="10"
+        android:scrollbars="vertical" />
+
+    <!-- Botón: Guardar -->
+    <Button
+        android:id="@+id/buttonGuardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guardar recordatorio"
+        android:layout_below="@id/editTextDetalles"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp" />
+
+</RelativeLayout>

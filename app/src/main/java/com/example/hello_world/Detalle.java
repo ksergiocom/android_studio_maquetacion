@@ -9,29 +9,22 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link Rutas#newInstance} factory method to
- * create an instance of this fragment.
- */
-public class Rutas extends Fragment {
-
-
+public class Detalle extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View view = inflater.inflate(R.layout.fragment_rutas, container, false);
+        View view = inflater.inflate(R.layout.fragment_agenda_form, container, false);
 
-        Button btnCrearItinerario = view.findViewById(R.id.btnCrearItinerario);
+        Button btnGuardar = view.findViewById(R.id.buttonGuardar);
 
-        btnCrearItinerario.setOnClickListener(v -> {
+        btnGuardar.setOnClickListener(v -> {
             // Aquí podrías guardar datos si hiciera falta
 
             // Volver al fragmento Agenda
             requireActivity().getSupportFragmentManager()
                     .beginTransaction()
-                    .replace(R.id.flFragment, new RutasForm())  // R.id.flFragment es el contenedor principal
+                    .replace(R.id.flFragment, new Agenda())  // R.id.flFragment es el contenedor principal
                     .addToBackStack(null)
                     .commit();
         });

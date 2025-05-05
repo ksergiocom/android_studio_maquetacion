@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+    <LinearLayout
+        android:id="@+id/detalle_location_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/detalle_location_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_edit_location_24"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="8dp"/>
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="París, Francia"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle=""
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="7 Noches en París"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@id/detalle_location_container"
+        android:layout_marginTop="8dp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="245dp"
+        android:layout_below="@id/textView12"
+        android:layout_marginTop="8dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/paris" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="La ciudad del amor y la luz, donde la elegancia de sus bulevares, cafés y monumentos icónicos inspira a visitantes de todo el mundo"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle=""
+        android:layout_below="@id/imageView4"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Salida: sábado, 22 de marzo"
+        android:layout_below="@id/textView13"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Precio: 1337€"
+        android:textColor="@color/black"
+        android:layout_below="@id/textView21"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="El Best Western Plus 61 Paris Nation Hotel está situado a solo 2 minutos a pie de la plaza de la Nación y a 15 minutos a pie del parque Bois de Vincennes. Este hotel presenta una decoración elegante de estilo retro de la década de 1960 y ofrece habitaciones insonorizadas y equipadas con WiFi gratuita. Algunas habitaciones tienen vistas al patio del hotel."
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_below="@id/textView3"
+        android:layout_marginTop="8dp" />
+
+        <include layout="@layout/item_comentario" />
+        <include layout="@layout/item_comentario" />
+        <include layout="@layout/item_comentario" />
+        <include layout="@layout/item_comentario" />
+        <include layout="@layout/item_comentario" />
+        <include layout="@layout/item_comentario" />
+
+
+</LinearLayout>
+
+</ScrollView>
