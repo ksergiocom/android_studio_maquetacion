@@ -14,7 +14,10 @@
         android:background="?attr/colorPrimary"
         app:title="GestionaViajes"
         app:titleTextColor="@android:color/white"
-        app:menu="@menu/top_app_bar_menu" />  <!-- Este es el menú que se muestra en la TopAppBar -->
+        app:navigationIconTint="@android:color/white"
+        app:menu="@menu/top_app_bar_menu"
+        app:iconTint="@android:color/white" />
+
 
     <RelativeLayout
         android:layout_width="wrap_content"
