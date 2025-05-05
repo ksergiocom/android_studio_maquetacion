@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         Fragment inicioFragment = new Inicio();
         Fragment rutasFragment = new Rutas();
         Fragment agendaFragment = new Agenda();
+        Fragment socialFragment = new Social();
 
         setCurrentFragment(inicioFragment);
 
@@ -43,6 +44,9 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             } else if( id == R.id.nav_agenda){
                 setCurrentFragment(agendaFragment);
+                return true;
+            } else if (id == R.id.nav_social){
+                setCurrentFragment(socialFragment);
                 return true;
             }
             return false;

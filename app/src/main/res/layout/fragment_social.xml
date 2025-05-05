@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SocialFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Social"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Eventos populares"
+        android:textSize="18sp" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:layout_marginEnd="8dp"
+                android:background="#CCCCCC"
+                android:scaleType="centerCrop"
+                android:src="@drawable/playa"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:layout_marginEnd="8dp"
+                android:background="#DDDDDD"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ciudad"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:background="#EEEEEE"
+                android:scaleType="centerCrop"
+                android:src="@drawable/montana"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingStart="16dp"
+        android:paddingTop="16dp"
+        android:paddingEnd="16dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Compartidos"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@android:drawable/ic_menu_share"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+
+    <include layout="@layout/item_card_evento" android:id="@+id/item_evento_1"/>
+    <include layout="@layout/item_card_evento" android:id="@+id/item_evento_1"/>
+    <include layout="@layout/item_card_evento" android:id="@+id/item_evento_1"/>
+    <include layout="@layout/item_card_evento" android:id="@+id/item_evento_1"/>
+</LinearLayout>

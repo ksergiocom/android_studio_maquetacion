@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RutasDetalle">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Título del viaje -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Semana en Japón"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Fechas y duración -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2025-01-01"
+                android:textSize="12sp"
+                android:layout_marginEnd="16dp"
+                android:textColor="@android:color/darker_gray"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Duración: 10 días"
+                android:textSize="12sp"
+                android:textColor="@android:color/darker_gray"/>
+        </LinearLayout>
+
+        <!-- Detalle del itinerario -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Detalle Itinerario"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Día 1-3: Tokio -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Día 1-3: Tokio"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Comienza tu aventura en la vibrante ciudad de Tokio. Durante los primeros tres días, tendrás la oportunidad de explorar algunos de los lugares más emblemáticos de la capital japonesa. Visita el templo Senso-ji en Asakusa, uno de los templos más antiguos de Tokio, y luego disfruta de una caminata por el distrito comercial de Nakamise-dori. Aprovecha para descubrir el modernismo de Shibuya y el distrito de Harajuku, famoso por su moda única. No te pierdas la Torre de Tokio y, si te interesa la tecnología, dedica unas horas al Museo de Innovación Miraikan. Tokio es un lugar que combina tradición y vanguardia, ofreciendo algo para todos los gustos."
+            android:textSize="14sp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Día 4-5: Kyoto -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Día 4-5: Kyoto"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kyoto, la antigua capital de Japón, te recibirá con sus templos tradicionales y hermosos jardines. Durante estos dos días, explora lugares como el templo dorado Kinkaku-ji, uno de los destinos más famosos de la ciudad. Visita también el templo Fushimi Inari-taisha, conocido por sus miles de puertas torii que serpentean por la montaña. Haz una parada en el mercado de Nishiki, donde podrás probar la comida local y comprar artesanías tradicionales. Kyoto es el corazón de la cultura japonesa, y cada rincón te transportará al Japón más clásico."
+            android:textSize="14sp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Día 6-7: Osaka -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Día 6-7: Osaka"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="En Osaka, la gastronomía será una de las grandes protagonistas. Disfruta de una experiencia culinaria única probando el famoso takoyaki y okonomiyaki en los mercados locales, como Dotonbori. Visita el impresionante Castillo de Osaka, rodeado por hermosos jardines y un parque. Para los amantes de la diversión, Universal Studios Japan es una parada obligada, con sus emocionantes atracciones temáticas. Osaka, conocida por su gente amable y su ambiente relajado, es ideal para sumergirse en la cultura moderna y disfrutar de una experiencia divertida y única."
+            android:textSize="14sp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Día 8-9: Hiroshima -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Día 8-9: Hiroshima"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hiroshima, tristemente famosa por su historia, ofrece una experiencia única de paz y reflexión. Dedica un día completo al Parque Memorial de la Paz de Hiroshima, donde puedes visitar el Museo de la Paz, la Cúpula de la Bomba Atómica y el Monumento a los Niños de la Paz. Después, cruza en ferry hasta la isla de Miyajima, conocida por su santuario Itsukushima y su impresionante puerta torii flotante. La isla es un lugar tranquilo y perfecto para disfrutar de la naturaleza y la serenidad. Hiroshima te invita a reflexionar sobre la paz mientras te maravillas con su belleza."
+            android:textSize="14sp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Día 10: Regreso -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Día 10: Regreso"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="En el último día de tu viaje, tendrás tiempo para realizar algunas compras de última hora y explorar cualquier rincón que aún no hayas visitado. Si te queda tiempo, disfruta de un último paseo por los parques o los mercados locales. Prepara tus recuerdos y dirígete al aeropuerto para tomar tu vuelo de regreso. Con recuerdos inolvidables de tu recorrido por Japón, seguro regresarás con el corazón lleno de experiencias y vivencias que te acompañarán siempre."
+            android:textSize="14sp"
+            android:layout_marginBottom="16dp"/>
+
+    </LinearLayout>
+
+</FrameLayout>

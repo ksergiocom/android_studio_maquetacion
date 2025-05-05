@@ -31,12 +31,12 @@
                 android:paddingRight="16dp"/>
 
 
-        <include layout="@layout/item_ruta" />
-        <include layout="@layout/item_ruta" />
-        <include layout="@layout/item_ruta" />
-        <include layout="@layout/item_ruta" />
-        <include layout="@layout/item_ruta" />
-        <include layout="@layout/item_ruta" />
+        <include layout="@layout/item_ruta" android:id="@+id/item_ruta_1"/>
+        <include layout="@layout/item_ruta" android:id="@+id/item_ruta_2"/>
+        <include layout="@layout/item_ruta" android:id="@+id/item_ruta_3"/>
+        <include layout="@layout/item_ruta" android:id="@+id/item_ruta_4"/>
+        <include layout="@layout/item_ruta" android:id="@+id/item_ruta_5"/>
+        <include layout="@layout/item_ruta" android:id="@+id/item_ruta_6"/>
 
     </LinearLayout>
 </ScrollView>
